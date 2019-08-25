@@ -1,0 +1,21 @@
+/* set something for every element */
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding:0;
+    /*box-sizing: border-box;*/
+    box-sizing: inherit;
+}
+
+/* project wide font definitions (because inheritance */
+
+html {
+    font-size: 62.5%;  /* counting on browser setting of 16px */
+}
+
+body {
+    padding: 3rem;
+    box-sizing: border-box; /* moved thebox-sizing here to make it inheritable! */
+}
